@@ -1,216 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio-Homepage </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href={{ asset('css/style.css') }}>
 </head>
-<style>
-.container {
-  	margin: 0 auto;
-  	max-width: 1200px;
-}
 
-.nav {
-  	background-color: #99ddff;
-  	left: 0;
-  	position: absolute;
-  	right: 0;
-  	top: 0;
-  	transition: all 0.3s ease-in-out;
-}
-
-.nav .container {
-  	align-items: center;
-    font-size:larger;
-    font-family: 'Josefin Sans', sans-serif;;
-  	display: flex;
-  	justify-content: space-between;
-  	padding: 20px 0;
-  	transition: all 0.3s ease-in-out;
-}
-
-.nav ul {
-  	align-items: center;
-  	display: flex;
-  	justify-content: center;
-  	list-style-type: none;
-}
-.active {
-  font-weight: bold;
-  color: #ff6600;
-}
-.nav a {
-    color: #000000;
-  	text-decoration: none;
-}
-.nav a.current,
-.nav a:hover {
-  color: #ff6600;
-  font-weight:normal;
-}
-.nav li:hover {
-    color: #ff6600;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.contact-btn{
-    background: #ff6600;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 25px;
-    width: 140px;
-    height: 50px;
-    border: 1px solid #ff8400;
-}
-.contact-btn:hover{
-    background: rgb(115, 0, 255);
-    font-weight: bold;
-    margin-bottom: 10px;
-    transition: all 0.3s ease-in-out;
-}
-.divone{
-  position: absolute; 
-            top: 120px; 
-            width: 100%; 
-            height: 700px; 
-            background-color: rgb(128, 11, 11)
-}
-.divone-social{
-  position: absolute; 
-  top: 200px;
-  left: 80px; 
-  width: 75px; 
-  height: 700px; 
-  /* background-color: #666 */
-}
-.divone-left{
-  position: absolute; 
-  left: 155px; 
-  width: 700px; 
-  height: 700px; 
-  background-color: rgb(11, 7, 119)
-}
-.divone-right{
-  position: absolute; 
-  left: 855px; 
-  width: 100%; 
-  height: 700px; 
-  background-color: rgb(84, 4, 90)
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#048af1;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin:12px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-</style>
 <body style="background-color:#99ddff">
-<nav class="nav">
-    <div class="container">
-        <h1 class="logo"><img src="{{URL::asset('/images/badhonlogo.png')}}" alt="Badhon_Rahman" height="60" ></h1>
-        <ul>
-            <li style="padding: 0 30px;"><a href="" class="current">Home</a></li>
-            <li style="padding: 0 30px;"><a href="">Services</a></li>
-            <li style="padding: 0 30px;"><a href="">About</a></li>
-            <li style="padding: 0 30px;"><a href="">Portfolio</a></li>
-            <li style="padding: 0 30px;"><a href="">Testimonials</a></li>
-            <li style="padding: 0 30px;"><a href="">Blog</a></li>
-            <li style="padding: 0 30px;"><a href=""><button class="contact-btn"> Contact </button></a></li>
-        </ul>
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><img src="{{ URL::asset('/images/badhonlogo.png') }}" alt="Badhon_Rahman" height="60">
+            </h1>
+            <ul>
+                <li style="padding: 0 30px;"><a href="" class="current">Home</a></li>
+                <li style="padding: 0 30px;"><a href="">Services</a></li>
+                <li style="padding: 0 30px;"><a href="">About</a></li>
+                <li style="padding: 0 30px;"><a href="">Portfolio</a></li>
+                <li style="padding: 0 30px;"><a href="">Testimonials</a></li>
+                <li style="padding: 0 30px;"><a href="">Blog</a></li>
+                <li style="padding: 0 30px;"><a href=""><button class="contact-btn" style="font-size:1.0em;">
+                            Contact </button></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="divone">
+        <div class="divone-social">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w3-center w3-animate-left">
+            <div class="divone-left">
+                <div style="position: absolute;top: 200px;left: 25px;width: 700px;height: 450px; text-align:left">
+                    <h2 style="font-size:3.1em;font-family: 'Josefin Sans', sans-serif; color:#290066;">Hello, I Am
+                    </h2>
+                    <h1 class="typewrite" style="font-size:4.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#6600cc;font-weight: bold;" data-period="2000" data-type='[ "Badhon Rahman"]'>
+                      <span class="wrap"></span>
+                  </h1>
+
+                    <p
+                        style="font-size:1.7em;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        A Software Engineer. I work with: PHP, Laravel, JavaScript, MySQL.</p>
+                    <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;"> Hire
+                        Me! </button>
+                    <a href="#" class="work" style="font-size:1.4em;">See My Works</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-center w3-animate-right">
+            <div class="divone-right">
+              <div class="w3-center w3-animate-bottom">
+                <div class="float">
+                  <img src="{{ URL::asset('/images/anipicpng.png') }}" height="600" >
+                </div>
+                <div class="cup">
+                  <div class="class" style="display: flex">
+                    <figure >
+                      <img src="{{ URL::asset('/images/trophy.png') }}" alt="cup-img" class="img-fluid" height="30px">
+                   </figure>
+                   
+                  <div class="cup-title">
+                    <p class="mb-0">Best Design<br>
+                       Award.
+                    </p>
+                 </div>
+                  </div>
+  
+               </div>
+               <div class="admin text-center">
+                <figure>
+                   <img src="{{ URL::asset('/images/cus.png') }}" alt="admin-icon" class="img-fluid" height="30px">
+                </figure>
+                <div class="admin-title d-inline-block ml-0">
+                  <strong>4k+</strong><br>
+                   <span class="d-block">Happy<br>
+                   Customers</span>
+                </div>
+             </div>
+              </div>
+
+            </div>
+        </div>
+
+
 
     </div>
-</nav>
 
-<div class="divone">
-  <div class="divone-social">
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <ul class="social-icons">
-        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-      </ul>
-    </div>
-  </div>
-  <div class="divone-left"></div>
-  <div class="divone-right"></div>
+    {{-- <div class="pulser"><</div> --}}
 
+<script type="text/javascript">
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-</div>
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
 
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.05em solid orange}";
+        document.body.appendChild(css);
+    };
+
+</script>
 
 </body>
+
 </html>
