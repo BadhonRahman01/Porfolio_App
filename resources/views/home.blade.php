@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio-Homepage </title>
+    <title>Portfolio | Home </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
+
 </head>
 
 <body style="background-color:#99ddff">
@@ -34,9 +36,9 @@
         <div class="divone-social">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/rahman.badhan/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="github" href="https://github.com/BadhonRahman01"><i class="fa fa-github"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/badhon-rahman/"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -71,7 +73,7 @@
                    </figure>
                    
                   <div class="cup-title">
-                    <p class="mb-0">Best Design<br>
+                    <p style="font-size:1.2em;">Best Design<br>
                        Award.
                     </p>
                  </div>
@@ -88,77 +90,123 @@
                    Customers</span>
                 </div>
              </div>
+             <div class="hcfloat">
+                <div class="hc">
+                  <img src="{{ URL::asset('/images/hc.png') }}" height="80px" >
+                  </div>
+                </div>
+                <div class="hcfloat">
+                    <div class="tri">
+                      <img src="{{ URL::asset('/images/tri.png') }}" height="80px" >
+                      </div>
+                    </div>
               </div>
+
+              <div class="cursor">
+                <div class="cursor--small"></div>
+                <div class="cursor--large"></div>
+                <div class="cursor--text">
+                    <div class="text"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="divtwo" >
+            <div class="class" style="padding:120px">
+                <h3 style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#5212b2;text-align:center;font-weight: bold;">My Expertise</h3>
+                <h1 class="typewrite" style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3b0472;font-weight: bold;text-align:center">
+                    Provide Wide Range of<br>
+                    Digital Services
+                </h1>
+<div class="exp">
+    <div class="service-inner-con position-relative">
+
+        <div class="service-box">
+           <div class="row">
+            <div class="hvr-rotate">
+              <div class="col-lg-6 col-md-6">
+                 <div class="service-box-item">
+                    <figure class="mb-0">
+                       <img src="{{ URL::asset('/images/ui.png') }}" alt="service-icon" class="img-fluid" height="60px">
+                    </figure>
+                    <div class="service-box-item-content">
+                       <h4 >Ui/Ux Design</h4>
+                       <p>UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces.
+                       </p>
+                       <div class="hvr-underline-from-left">
+                       <a href="#" data-toggle="modal" data-target="#Ui-Design">Read More</a>
+                    </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="hvr-rotate">
+              <div class="col-lg-6 col-md-6">
+                 <div class="service-box-item">
+                    <figure class="mb-0">
+                       <img src="{{ URL::asset('/images/ux.png') }}" alt="service-icon" class="img-fluid" height="60px">
+                    </figure>
+                    <div class="service-box-item-content">
+                       <h4>Web Design</h4>
+                       <p>Web development is the work involved in developing a website for the Internet or an intranet.
+                       </p>
+                       <a href="#" data-toggle="modal" data-target="#web-design">Read More</a>
+                    </div>
+                 </div>
+              </div>
+            </div>
+           </div>
+           <div class="row mb-0">
+            <div class="hvr-rotate">
+              <div class="col-lg-6 col-md-6">
+                 <div class="service-box-item">
+                    <figure class="mb-0">
+                       <img src="{{ URL::asset('/images/coding.png') }}" alt="service-icon" class="img-fluid" height="60px">
+                    </figure>
+                    <div class="service-box-item-content">
+                       <h4 >Web Development</h4>
+                       <p>Web development is the work involved in developing a website for the Internet or an intranet.
+                       </p>
+                       <a href="#" data-toggle="modal" data-target="#web-development">Read More</a>
+                    </div>
+                 </div>
+              </div>
+            </div>
+              <div class="hvr-rotate">
+              <div class="col-lg-6 col-md-6">
+                 <div class="service-box-item mb-0">
+                    <figure class="mb-0">
+                       <img src="{{ URL::asset('/images/mobile-app.png') }}" alt="service-icon" class="img-fluid" height="60px">
+                    </figure>
+                    <div class="service-box-item-content">
+                       <h4 >App Development</h4>
+                       <p>Web development is the work involved in developing a website for the Internet or an intranet.
+                       </p>
+                       <a href="#" data-toggle="modal" data-target="#app-development">Read More</a>
+                    </div>
+                 </div>
+              </div>
+            </div>
+           </div>
+        </div>
+</div>
+
+
+
 
             </div>
         </div>
 
 
-
     </div>
 
     {{-- <div class="pulser"><</div> --}}
-
-<script type="text/javascript">
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.05em solid orange}";
-        document.body.appendChild(css);
-    };
-
-</script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js'></script>
+    <script src="{{ asset('js/script.js') }}"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
