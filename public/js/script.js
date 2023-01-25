@@ -1,3 +1,25 @@
+
+
+//navabar
+var ul = document.querySelectorAll('.nav a');
+console.log(ul.length);
+ul.forEach(item=>{
+    item.addEventListener('click', (event) => {
+        event.preventDefault();
+        if(item.classList == 'current'){
+            //item.classList.remove('current')
+        }else{
+            ul.forEach(item=>{
+                if(item.classList == 'current'){
+                    item.classList.remove('current');
+                }
+            });
+            item.classList = 'current';
+        }
+
+
+})
+});
 // TypreWriter.js
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -56,7 +78,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 //Cursor Effect
-console.clear();
+
 
 const { gsap, CircleType } = window;
 
