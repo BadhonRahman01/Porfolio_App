@@ -19,7 +19,7 @@
         <div class="container">
             <h1 class="logo"><img src="{{ URL::asset('/images/badhonlogo.png') }}" alt="Badhon_Rahman" height="60">
             </h1>
-            <ul id="">
+            <ul>
                 <li style="padding: 0 30px;"><a href="" class="current" id="a1">Home</a></li>
                 <li style="padding: 0 30px;"><a href="" id="a2">Services</a></li>
                 <li style="padding: 0 30px;"><a href="" id="a3">About</a></li>
@@ -32,6 +32,11 @@
 
         </div>
     </nav>
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
 
     <div class="divone">
         <div class="divone-social">
@@ -232,61 +237,70 @@
                 </div>
             </div>
         </div>
-        <div class="divthree">
-         <div class="w3-center w3-animate-left">
+    </div>
+    <div class="divthree">
+        <div class="w3-center w3-animate-left">
             <div class="divthree-left" style="margin: 100px 0px;">
-               <div class="container" style="width: 680px">
-                  <div class="row">
-                    <div class="col-lg-6 order-lg-0 order-2">
-                     <div class="leftcard" >
-                        <div class="ring">
-                           <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:orange;font-weight: bold;padding-top:15px;">75% </h1>
-                        </div>
-                           <h3
-                           style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;padding-top:10px;">
-                          Graphics Design</h3>
-                      </div>
-                      <div class="leftcard">
-                        <div class="ring">
-                           <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3165cc;font-weight: bold;padding-top:15px;">85% </h1>
-                        </div>
-                           <h3
-                           style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
-                          Branding Design</h3>  
+                <div class="container" style="width: 680px">
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-0 order-2">
+                            <div class="leftcard">
+                                <div class="ring">
+                                    <h1
+                                        style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:orange;font-weight: bold;padding-top:15px;">
+                                        75% </h1>
+                                </div>
+                                <h3
+                                    style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;padding-top:10px;">
+                                    Graphics Design</h3>
+                            </div>
+                            <div class="leftcard">
+                                <div class="ring">
+                                    <h1
+                                        style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3165cc;font-weight: bold;padding-top:15px;">
+                                        85% </h1>
+                                </div>
+                                <h3
+                                    style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
+                                    Branding Design</h3>
 
-                      </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-0 order-2">
+                            <div class="rightcard">
+                                <div class="ring">
+                                    <h1
+                                        style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#7524c7;font-weight: bold;padding-top:15px;">
+                                        95% </h1>
+                                </div>
+                                <h3
+                                    style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
+                                    Web Designing</h3>
+
+                            </div>
+                            <div class="rightcard">
+                                <div class="ring">
+                                    <h1
+                                        style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3b0472;font-weight: bold;padding-top:15px;">
+                                        80% </h1>
+                                </div>
+                                <h3
+                                    style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
+                                    Web Development</h3>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 order-lg-0 order-2">
-                     <div class="rightcard">
-                        <div class="ring">
-                           <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#7524c7;font-weight: bold;padding-top:15px;">95% </h1>
-                        </div>
-                           <h3
-                           style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
-                          Web Designing</h3>
-
-                      </div>
-                      <div class="rightcard">
-                        <div class="ring">
-                           <h1 style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3b0472;font-weight: bold;padding-top:15px;">80% </h1>
-                        </div>
-                           <h3
-                           style="font-size:1.4em;font-family: 'Trebuchet MS', sans-serif;text-align:center;font-weight: 600;">
-                          Web Development</h3>
-
-                      </div>
-                    </div>
-                  </div>
 
                 </div>
                 <div class="hcfloat">
-                  <div class="tri3">
-                      <img src="{{ URL::asset('/images/tri.png') }}" height="80px">
-                  </div>
-              </div>
+                    <div class="tri3">
+                        <img src="{{ URL::asset('/images/tri.png') }}" height="80px">
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="w3-center w3-animate-right">
+        </div>
+        <div class="w3-center w3-animate-right">
             <div class="divthree-right" style="margin: 100px 0px;">
                 <h3
                     style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#5212b2;text-align:left;font-weight: bold;">
@@ -303,30 +317,317 @@
                     consequntar magni dolores.
                 </p>
                 <a role="button" href="{{ URL::asset('/cv/cv.pdf') }}" download="Badhon_Rahman_CV">
-                    <button class="contact-btn" style="font-size:1.2em;margin-top:15px; width: 170px;height: 55px;float:left">
+                    <button class="contact-btn"
+                        style="font-size:1.2em;margin-top:15px; width: 170px;height: 55px;float:left">
                         Download CV</button>
                 </a>
                 <div class="hcfloat">
-                  <div class="hc3">
-                      <img src="{{ URL::asset('/images/hcr.png') }}" height="80px">
-                  </div>
-              </div>
-               <div class="float">
-                     <div class="bigc3">
+                    <div class="hc3">
+                        <img src="{{ URL::asset('/images/hcr.png') }}" height="80px">
+                    </div>
+                </div>
+                <div class="float">
+                    <div class="bigc3">
                         <img src="{{ URL::asset('/images/bigcr.png') }}">
-                     </div>
-               </div>
-              </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div class="divfour">
+        <h3
+            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#f2edfa;text-align:center;font-weight: bold;padding-top: 100px;">
+            Creative Works</h3>
+        <h1
+            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#ede8f3;font-weight: bold;text-align:center;padding-bottom:15px;">
+            Check My Portfolio
+        </h1>
+        <div id="divfournav" class="text-center">
+            <button class="current" onclick="filterSelection('all')"> All </button>
+            <button class="" onclick="filterSelection('cars')">Products </button>
+            <button class="" onclick="filterSelection('animals')">Web App</button>
+            <button class="" onclick="filterSelection('fruits')"> Inetraction </button>
+            <button class="" onclick="filterSelection('colors')">Brand Identity</button>
+        </div>
+    </div>
+
+    <div class="divfour1">
+        {{-- portfolio cards here --}}
+    </div>
+    <div class="divfour2">
+        <div class="w3-center w3-animate-left">
+            <div class="divfour2left">
+                <img src="{{ URL::asset('/images/people.png') }}" height="400px">
+
+                <div class="hcfloat">
+                    <div class="hc42l">
+                        <img src="{{ URL::asset('/images/hc.png') }}" height="80px">
+                    </div>
+                </div>
+                <div class="float">
+                    <div class="bigc42l">
+                        <img src="{{ URL::asset('/images/bigc.png') }}">
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="w3-center w3-animate-right">
+            <div class="divfour2right">
+                <h3
+                    style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;">
+                    Testimonials</h3>
+                <h1
+                    style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;">
+                    Happy Clients Feedback
+                </h1>
+                <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -600px;">
+                <p
+                    style="margin-left: 52px;margin-top: -30px;    width: 550px;
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: 'Lato', sans-serif;">
+                    Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+                    aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
+                    magnam aliquam quaerat voluptatem reprehenderit in voluptate
+                    cillum dolore eu fugiat nulla pariatur maxime...
+                </p>
+                <h3
+                    style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
+                    Kevin Andrew</h3>
+                <p
+                    style="margin-left: 52px;width: 550px;
+                     text-align: left;
+                     font-size: 15px;
+                     font-family: 'Lato', sans-serif;">
+                    CEO of the company
+                </p>
+                <button class="divfour2rightbtnleft"><img src="{{ URL::asset('/images/arrowl.png') }}"> </button>
+                <button class="divfour2rightbtnright"><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divfive">
+        <h3
+            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:center;font-weight: bold;padding-top: 100px;">
+            Latest News</h3>
+        <h1
+            style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:center;padding-bottom:50px;">
+            Blog & Articles
+        </h1>
+        <div class="row">
+            <div class="col-lg-4" style="margin-left: 80px">
+                <div class="blog-box-item">
+                    <div class="blog-img">
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <figure class="mb-0">
+                                <img src="{{ URL::asset('/images/b1.png') }}">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-auteher-title">
+                            <span style="font-size:1.2em;color:#7f51c9;text-align:left;">By David William</span>
+                            <span class="" style="font-size:1.2em;color:grey;float:right;">Mar 8, 2022</span>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <h4>Quis autem vea eum <br>
+                                iure reprehenderit
+                            </h4>
+                        </a>
+                        <p>Dolor repellendus temporibus autem
+                            quibusdam officiis debitis rerum nece
+                            aibus minima veniam.
+                        </p>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-left: -80px">
+                <div class="blog-box-item">
+                    <div class="blog-img">
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <figure class="mb-0">
+                                <img src="{{ URL::asset('/images/b2.png') }}">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-auteher-title">
+                            <span style="font-size:1.2em;color:#7f51c9;text-align:left;">By John Doe</span>
+                            <span class="" style="font-size:1.2em;color:grey;float:right;">Mar 9, 2022</span>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <h4>Reprehenderit in vouta <br>
+                                velit esse cillum
+                            </h4>
+                        </a>
+                        <p>Dolor repellendus temporibus autem
+                            quibusdam officiis debitis rerum nece
+                            aibus minima veniam.
+                        </p>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-left: -80px">
+                <div class="blog-box-item">
+                    <div class="blog-img">
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <figure class="mb-0">
+                                <img src="{{ URL::asset('/images/b3.png') }}">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-auteher-title">
+                            <span style="font-size:1.2em;color:#7f51c9;text-align:left;">By Elina Parker</span>
+                            <span class="" style="font-size:1.2em;color:grey;float:right;">Mar 11, 2022</span>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">
+                            <h4>Soluta nobis ose aligen <br>
+                                optio cumue
+                            </h4>
+                        </a>
+                        <p>Dolor repellendus temporibus autem
+                            quibusdam officiis debitis rerum nece
+                            aibus minima veniam.
+                        </p>
+                        <a href="#" data-toggle="modal" data-target="#blog-model-1">Read More</a>
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+        <div class="hcfloat">
+            <div class="tri5">
+                <img src="{{ URL::asset('/images/tri.png') }}" height="80px">
+            </div>
+        </div>
+        <div class="hcfloat">
+            <div class="hc5">
+                <img src="{{ URL::asset('/images/hcr.png') }}" height="80px">
+            </div>
+        </div>
+        <div class="float">
+            <div class="bigc5">
+                <img src="{{ URL::asset('/images/bigcr.png') }}">
+            </div>
+        </div>
+    </div>
 
+    <div class="divsix">
+        <h3
+            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:center;font-weight: bold;padding-top: 100px;">
+            Get in Touch</h3>
+        <h1
+            style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:center;padding-bottom:50px;">
+            Any Questions? <br>
+            Feel Free to Contact
+        </h1>
+        <div class="col-lg-4 order-lg-0 order-2">
+            <div class="contact-information position-relative wow slideInLeft">
+                <ul class="list-unstyled">
+                    <li>
+                        <figure class="mb-0 d-flex align-items-center justify-content-center">
+                            <img src="{{ URL::asset('/images/location.png') }}"
+                                style="margin-left: 10px;margin-top: 10px;">
+                        </figure>
+                        <div class="contact-information-content">
+                            <h5>Address:</h5>
+                            <p class="mb-0">Plot: 10, Road: 12, Block: F,
+                                Niketon, Gulshan-1, Dhaka.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="mb-0 d-flex align-items-center justify-content-center">
+                            <img src="{{ URL::asset('/images/mail.png') }}"
+                                style="margin-left: 10px;margin-top: 10px;">
+                        </figure>
+                        <div class="contact-information-content">
+                            <h5>Email:</h5>
+                            <p class="mb-0">badhon.rahman184@gmail.com</p>
+                            <p class="mb-0">badhon.rahman418@gmail.com</p>
+                        </div>
+                    </li>
+                    <li class="mb-0">
+                        <figure class="mb-0 d-flex align-items-center justify-content-center">
+                            <img src="{{ URL::asset('/images/phone.png') }}"
+                                style="margin-left: 10px;margin-top: 10px;">
+                        </figure>
+                        <div class="contact-information-content">
+                            <h5>Phone:</h5>
+                            <p class="mb-0">+8801950498055</p>
+                            <p class="mb-0">+8801868007530</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <form id="contactpage" action="{{ route('queries.store') }}" method="POST" class="contact-form">
+                @csrf
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-0">
+                            <input type="text" placeholder="Name" name="name" id="name"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-0">
+                            <input type="email" id="emailHelp" name="email" placeholder="Email"
+                                autocomplete="off" required>
+                            <small class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-0">
+                            <input type="tel" placeholder="Phone" name="phone" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-0">
+                            <input type="text" name="subject" placeholder="Subject" id="subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class=" form-group mb-0">
+                            <textarea placeholder="Message" rows="3" name="message" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="contact-btn"
+                    style="width: 180px;font-weight:700;font-size:1.4em;">Submit</button>
+            </form>
 
 
         </div>
 
+
     </div>
+<section class="divfooter">
+    <h1 class="logo" style="text-align: center"><img src="{{ URL::asset('/images/badhonlogo2.png') }}" alt="Badhon_Rahman" height="60" >
+    </h1>
+            <ul>
+                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Home</a></li>
+                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Services</a></li>
+                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">About</a></li>
+                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Portfolio</a></li>
+                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Testimonials</a></li>
+                <li style="padding: 0 15px; "><a href="" >Blog</a></li>
+            </ul>
+
+</section>
+
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
