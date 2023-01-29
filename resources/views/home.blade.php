@@ -15,7 +15,7 @@
 </head>
 
 <body style="background-color:#99ddff">
-    <nav class="nav">
+    <nav class="nav" id="navbar_top">
         <div class="container">
             <h1 class="logo"><img src="{{ URL::asset('/images/badhonlogo.png') }}" alt="Badhon_Rahman" height="60">
             </h1>
@@ -24,9 +24,9 @@
                 <li style="padding: 0 30px;"><a href="" id="a2">Services</a></li>
                 <li style="padding: 0 30px;"><a href="" id="a3">About</a></li>
                 <li style="padding: 0 30px;"><a href="" id="a4">Portfolio</a></li>
-                <li style="padding: 0 30px;"><a href="" id="a4">Testimonials</a></li>
-                <li style="padding: 0 30px;"><a href="" id="a6">Blog</a></li>
-                <li style="padding: 0 30px;"><a href=""><button class="contact-btn" style="font-size:1.0em;">
+                <li style="padding: 0 30px;"><a href="#Divsix" id="a4">Testimonials</a></li>
+                <li style="padding: 0 30px;"><a href="#" id="a6">Blog</a></li>
+                <li style="padding: 0 30px;"><a href="#"><button class="contact-btn" style="font-size:1.0em;">
                             Contact </button></a></li>
             </ul>
 
@@ -74,13 +74,12 @@
             <div class="divone-right">
                 <div class="w3-center w3-animate-bottom">
                     <div class="float">
-                        <img src="{{ URL::asset('/images/anipicpng.png') }}" height="600">
+                        <img src="{{ URL::asset('/images/y1.png') }}" height="700">
                     </div>
                     <div class="cup">
                         <div class="class" style="display: flex">
                             <figure>
-                                <img src="{{ URL::asset('/images/trophy.png') }}" alt="cup-img" class="img-fluid"
-                                    height="30px">
+                                <img src="{{ URL::asset('/images/trophy.png') }}" height="30px">
                             </figure>
 
                             <div class="cup-title">
@@ -93,8 +92,7 @@
                     </div>
                     <div class="admin text-center">
                         <figure>
-                            <img src="{{ URL::asset('/images/cus.png') }}" alt="admin-icon" class="img-fluid"
-                                height="30px">
+                            <img src="{{ URL::asset('/images/cus.png') }}" height="30px">
                         </figure>
                         <div class="admin-title d-inline-block ml-0">
                             <strong>4k+</strong><br>
@@ -353,8 +351,72 @@
     </div>
 
     <div class="divfour1">
-        {{-- portfolio cards here --}}
+        <div class="w3-center w3-animate-bottom">
+        <div class="divfour1left">
+            <div class="container" style="margin-top: 25px">
+                <div class="row" style="width:100%;">
+                    <div class="col-lg-6" style="width:700px;float:left;">
+                        <div class="pleftcard">
+                            <div style="margin-top: 220px;">
+                                <h3>
+                                    Application UI Design</h3>
+                                <p>Dolar
+                                    repellendus temporibus...</p>
+                            </div>
+                            <button ><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                        </div>
+                        <div class="pleftcardb1" style="margin-right: 20px;background: url(../images/p3.png)">
+                            <div style="margin-top: 220px;">
+                                <h3>
+                                    Mobile UI Design</h3>
+                                <p>Dolar
+                                    repellendus temporibus...</p>
+                            </div>
+                            <button ><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                        </div>
+                        <div class="pleftcardb1" style="margin-left: 10px;background: url(../images/p4.png)">
+                            <div style="margin-top: 220px;">
+                                <h3>
+                                    Businesscard UI Design</h3>
+                                <p>Dolar
+                                    repellendus temporibus...</p>
+                                    <button ><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="divfour1right">
+            <div class="col-lg-6 " style="margin-left: 25px;margin-top: 20px;">
+                <div class="prightcard" style="background: url(../images/p2.png)">
+                    <div style="margin-top: 220px;">
+                        <h3>
+                            Furni furniture UI Design</h3>
+                        <p>Dolar
+                            repellendus temporibus...</p>
+                            <button ><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                    </div>
+
+                </div>
+                <div class="prightcard" style="background: url(../images/p5.png)">
+                    <div style="margin-top: 220px;">
+                        <h3>
+                            Real estate UI Design</h3>
+                        <p>Dolar
+                            repellendus temporibus...</p>
+                            <button ><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+
     <div class="divfour2">
         <div class="w3-center w3-animate-left">
             <div class="divfour2left">
@@ -418,6 +480,7 @@
             style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:center;padding-bottom:50px;">
             Blog & Articles
         </h1>
+
         <div class="row">
             <div class="col-lg-4" style="margin-left: 80px">
                 <div class="blog-box-item">
@@ -499,10 +562,10 @@
                         <a href="#" data-toggle="modal" data-target="#blog-model-1">Read More</a>
                     </div>
                 </div>
-
+            </div>
 
             </div>
-        </div>
+
         <div class="hcfloat">
             <div class="tri5">
                 <img src="{{ URL::asset('/images/tri.png') }}" height="80px">
@@ -520,7 +583,7 @@
         </div>
     </div>
 
-    <div class="divsix">
+    <section class="divsix" id="Divsix">
         <h3
             style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:center;font-weight: bold;padding-top: 100px;">
             Get in Touch</h3>
@@ -529,9 +592,10 @@
             Any Questions? <br>
             Feel Free to Contact
         </h1>
+        <div class="w3-center w3-animate-left">
         <div class="col-lg-4 order-lg-0 order-2">
             <div class="contact-information position-relative wow slideInLeft">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled" style="text-align:left">
                     <li>
                         <figure class="mb-0 d-flex align-items-center justify-content-center">
                             <img src="{{ URL::asset('/images/location.png') }}"
@@ -569,7 +633,9 @@
                 </ul>
             </div>
         </div>
+    </div>
 
+    <div class="w3-center w3-animate-right">
         <div class="col-lg-8">
             <form id="contactpage" action="{{ route('queries.store') }}" method="POST" class="contact-form">
                 @csrf
@@ -606,29 +672,51 @@
                     </div>
                 </div>
                 <button type="submit" id="submit" class="contact-btn"
-                    style="width: 180px;font-weight:700;font-size:1.4em;">Submit</button>
+                    style="width: 180px;font-weight:700;font-size:1.4em;float:left;">Submit</button>
             </form>
 
 
         </div>
-
-
     </div>
-<section class="divfooter">
-    <h1 class="logo" style="text-align: center"><img src="{{ URL::asset('/images/badhonlogo2.png') }}" alt="Badhon_Rahman" height="60" >
-    </h1>
-            <ul>
-                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Home</a></li>
-                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Services</a></li>
-                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">About</a></li>
-                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Portfolio</a></li>
-                <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="" >Testimonials</a></li>
-                <li style="padding: 0 15px; "><a href="" >Blog</a></li>
+
+    </section>
+    <button class="upbtn" id="upbtn" onclick="topFunction()"><img src="{{ URL::asset('/images/up.png') }}" > </button>
+
+    <section class="divfooter">
+        <h1 class="logo" style="text-align: center"><img src="{{ URL::asset('/images/badhonlogo2.png') }}"
+                alt="Badhon_Rahman" height="60">
+        </h1>
+        <ul>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Home</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Services</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">About</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Portfolio</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Testimonials</a></li>
+            <li style="padding: 0 15px; "><a href="">Blog</a></li>
+        </ul>
+
+        <div style="margin: 20px;text-align: center;">
+            <ul class="footer-icons">
+                <li><a class="facebook" href="https://www.facebook.com/rahman.badhan/"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a class="github" href="https://github.com/BadhonRahman01"><i class="fa fa-github"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/badhon-rahman/"><i
+                            class="fa fa-linkedin"></i></a></li>
             </ul>
 
-</section>
+        </div>
+        <div style="margin-top:60px;">
+            <hr style="height:1px;width:950px;margin:auto;border-width:0;color:gray;background-color:gray;">
+        </div>
+
+        <div style="text-align: center;margin:40px;">
+            <p class="mb-0" style="color: grey">Copyright &#169 BadhonRahman.com 2023 | All Rights Reserved.</p>
+        </div>
+    </section>
 
 
+
+    <script src=" https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js'></script>

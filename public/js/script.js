@@ -1,6 +1,35 @@
+//take to top
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+//navabar_scroll Ui-Design
 
-
-//navabar
+document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 150) {
+          document.getElementById('navbar_top').classList.add('navtop');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.nav').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('navtop');
+           // remove padding top from body
+          document.body.style.paddingTop = '0';
+        } 
+    });
+  }); 
+  //up button show
+  document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 150) {
+          document.getElementById('upbtn').style.display = 'block';
+        } else {
+          document.getElementById('upbtn').style.display = 'none';
+        } 
+    });
+  }); 
+//navabar_current
 var ul = document.querySelectorAll('.nav a');
 console.log(ul.length);
 ul.forEach(item=>{
