@@ -1,11 +1,12 @@
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
+.mobile-logo {
+    display: none;
+    cursor: pointer;
 }
 
 .nav {
     background-color: #99ddff;
     left: 0;
+    flex: 1;
     position: absolute;
     right: 0;
     top: 0;
@@ -44,7 +45,7 @@ html {
 }
 
 .nav a {
-    color: #000000;
+    color: #110c58;
     text-decoration: none;
 }
 .nav a.current,
@@ -96,6 +97,17 @@ html {
     width: 700px;
     height: 700px;
     /* background-color: rgb(11, 7, 119) */
+}
+.divone-left h2 {
+    font-size: 3.1em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #290066;
+}
+.divone-left h1 {
+    font-size: 4.5em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #6600cc;
+    font-weight: bold;
 }
 .divone-left a {
     font-size: 20px;
@@ -506,77 +518,76 @@ html {
 .single-chart {
     width: 150px;
     margin: auto;
-  }
-  
-  .circular-chart {
+}
+
+.circular-chart {
     display: block;
     margin: 10px auto;
     max-width: 80%;
     max-height: 250px;
-  }
-  
-  .circle-bg {
+}
+
+.circle-bg {
     fill: none;
     stroke: #eee;
     stroke-width: 2.5;
-  }
-  
-  .circle {
+}
+
+.circle {
     fill: none;
     stroke-width: 1.5;
     stroke-linecap: round;
     animation: progress 3s ease-out forwards;
-  }
-  
-  @keyframes progress {
+}
+
+@keyframes progress {
     0% {
-      stroke-dasharray: 0 100;
+        stroke-dasharray: 0 100;
     }
-  }
-  
-  .circular-chart.orange .circle {
+}
+
+.circular-chart.orange .circle {
     stroke: #ff9f00;
-  }
-  
-  .circular-chart.purple .circle {
+}
+
+.circular-chart.purple .circle {
     stroke: purple;
-  }
-  .circular-chart.dark .circle {
+}
+.circular-chart.dark .circle {
     stroke: rgb(38, 14, 145);
-  }
-  .circular-chart.blue .circle {
+}
+.circular-chart.blue .circle {
     stroke: #3c9ee5;
-  }
-  
-  .percentageO {
+}
+
+.percentageO {
     fill: orange;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 0.7em;
     text-anchor: middle;
-  }
-  .percentageB {
+}
+.percentageB {
     fill: #3c9ee5;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 0.7em;
     text-anchor: middle;
-  }
-  .percentageP {
+}
+.percentageP {
     fill: purple;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 0.7em;
     text-anchor: middle;
-  }
-  .percentageD {
+}
+.percentageD {
     fill: rgb(38, 14, 145);
     font-family: sans-serif;
     font-weight: bold;
     font-size: 0.7em;
     text-anchor: middle;
-  }
-
+}
 
 .hc3 {
     position: absolute;
@@ -676,6 +687,11 @@ html {
     margin: 50px;
     margin: 25px 0px 25px -100px;
     /* background-color: rgb(202, 59, 212); */
+}
+.divfour2rightbottom {
+    position: absolute;
+    left: 380px;
+    bottom: 0;
 }
 .divfour2rightbtnleft {
     background: orange;
@@ -1039,10 +1055,10 @@ html {
     padding-top: 2px;
     background: url(../images/p1.png);
 }
-.pleftcard button{
+.pleftcard button {
     background: orange;
     color: white;
-    float:right;
+    float: right;
     margin-right: 20px;
     margin-top: -50px;
     text-align: center;
@@ -1071,7 +1087,7 @@ html {
 }
 .pleftcard:hover {
     background: url(../images/p1.png);
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .pleftcard:hover h3 {
@@ -1093,10 +1109,10 @@ html {
     padding-top: 2px;
     transition: all 0.3s ease-in-out;
 }
-.pleftcardb1 button{
+.pleftcardb1 button {
     background: orange;
     color: white;
-    float:right;
+    float: right;
     margin-right: 20px;
     margin-top: -50px;
     text-align: center;
@@ -1124,7 +1140,7 @@ html {
     display: none;
 }
 .pleftcardb1:hover {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .pleftcardb1:hover h3 {
@@ -1158,10 +1174,10 @@ html {
     padding-top: 2px;
     transition: all 0.3s ease-in-out;
 }
-.prightcard button{
+.prightcard button {
     background: orange;
     color: white;
-    float:right;
+    float: right;
     margin-right: 20px;
     margin-top: -50px;
     text-align: center;
@@ -1189,7 +1205,7 @@ html {
     display: none;
 }
 .prightcard:hover {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .prightcard:hover h3 {
@@ -1202,10 +1218,10 @@ html {
     display: block;
 }
 
-.upbtn{
+.upbtn {
     background: orange;
     color: white;
-    float:right;
+    float: right;
     bottom: 50px;
     right: 100px;
     border-radius: 50%;
@@ -1214,77 +1230,88 @@ html {
     border: 1px solid #ff8400;
     position: fixed;
     -webkit-animation: spineer 2s infinite;
-    animation: spineer 2s infinite; 
+    animation: spineer 2s infinite;
 }
 @-webkit-keyframes spineer {
     from {
-    box-shadow: 0 0 0 0 rgba(255, 161, 34, .99)
+        box-shadow: 0 0 0 0 rgba(255, 161, 34, 0.99);
     }
     to {
-    box-shadow: 0 0 0 45px rgba(255, 161, 34, .01)
+        box-shadow: 0 0 0 45px rgba(255, 161, 34, 0.01);
     }
-    }    
-    
-    @keyframes spineer {
-    from {
-    box-shadow: 0 0 0 0 rgba(255, 161, 34, .99)
-    }
-    to {
-    box-shadow: 0 0 0 45px rgba(255, 161, 34, .01)
-    }
-    }
+}
 
- /* modals */
- .modal {
- display: none; /* Hidden by default */
- position: fixed; /* Stay in place */
- padding-top: 100px; /* Location of the box */
- left: 0;
- top: 0;
- width: 100%; /* Full width */
- height: 100%; /* Full height */
- overflow: auto; /* Enable scroll if needed */
- background-color: rgb(0,0,0); /* Fallback color */
- background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+@keyframes spineer {
+    from {
+        box-shadow: 0 0 0 0 rgba(255, 161, 34, 0.99);
+    }
+    to {
+        box-shadow: 0 0 0 45px rgba(255, 161, 34, 0.01);
+    }
+}
+
+/* modals */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
- position: relative;
- background-color: #fefefe;
- margin: auto;
- padding: 0;
- border: 1px solid #888;
- width: 45%;
- padding-top: 20px;
- padding-left: 30px;
- padding-right: 30px;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
- -webkit-animation-name: animatetop;
- -webkit-animation-duration: 0.4s;
- animation-name: animatetop;
- animation-duration: 0.4s;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 45%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
- from {top:-300px; opacity:0} 
- to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes animatetop {
- from {top:-300px; opacity:0}
- to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 /* The Close Button */
 
+.modal-body {
+    padding: 2px 16px;
+}
 
-
-.modal-body {padding: 2px 16px;}
-
-
-.modal-close{
+.modal-close {
     justify-content: center;
     position: absolute;
     border-radius: 50%;
@@ -1293,7 +1320,7 @@ html {
     height: 40px;
     color: white;
     text-align: center;
-    font-size:1.4em;
+    font-size: 1.4em;
     padding-top: 6px;
     margin-left: 620px;
     margin-top: -40px;
@@ -1301,7 +1328,70 @@ html {
 
 .modal-close:hover,
 .modal-close:focus {
- text-decoration: none;
- cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+.carousel {
+    position: absolute;
+    width: 650px;
+    height: 550px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.carousel .sliders {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .sliders .slide {
+    display: none;
+}
+
+.carousel .sliders .slide.active {
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: slider-animation 0.5s ease-in;
+}
+
+@keyframes slider-animation {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+/* from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  } */

@@ -1,3 +1,41 @@
+//responsive:mobile
+var menulist = document.getElementById("menulist");
+
+menulist.style.maxHeight = "0px";
+function togglemenu(){
+    if(menulist.style.maxHeight == "0px")
+    {
+        menulist.style.maxHeight = "130px";
+    }else{
+        menulist.style.maxHeight = "0px";
+    }
+}
+
+
+
+// test carousel
+const carouselControlPrev = document.getElementById('carousel__controls__prev');
+const carouselControlNext = document.getElementById('carousel__controls__next');
+
+carouselControlPrev.addEventListener('click', () => {
+	const sliders = document.querySelector('.carousel .sliders');
+	const activeSlideIndex = [...sliders.children].findIndex(element => [...element.classList].includes('active'));
+	const nextSlideIndex = activeSlideIndex + 1 == sliders.children.length ? 0: activeSlideIndex + 1; 
+	sliders.children[activeSlideIndex].classList.toggle('active');
+	sliders.children[nextSlideIndex].classList.toggle('active');
+})
+
+carouselControlNext.addEventListener('click', () => {
+	const sliders = document.querySelector('.carousel .sliders');
+	const activeSlideIndex = [...sliders.children].findIndex(element => [...element.classList].includes('active'));
+	const prevSlideIndex = activeSlideIndex - 1 < 0 ? sliders.children.length - 1: activeSlideIndex - 1; 
+	sliders.children[activeSlideIndex].classList.toggle('active');
+	sliders.children[prevSlideIndex].classList.toggle('active');
+})
+//hireme function
+function hireme(){
+    location.href = "#7";
+}
 //ux modal
 // Get the modal
 var uxmodal = document.getElementById("uxmodal");

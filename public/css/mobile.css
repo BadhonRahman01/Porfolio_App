@@ -1,0 +1,80 @@
+/* devices with max width of 775 */
+@media only screen and (max-width: 700px) {
+    #menulist {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .nav ul {
+        width: 50%;
+        background-color: #ffffff;
+        position: fixed;
+        display: inline-block;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    .nav ul li {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav ul li a {
+        display: inline-block;
+        color: #110c58;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+    .divone {
+        position: absolute;
+        width: 700px;
+        height: 1000px;
+        /* background-color: rgb(128, 11, 11) */
+    }
+    .divone-social {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 75px;
+        height: 300px;
+        /* background-color: #666 */
+    }
+    .divone-left {
+        position: absolute;
+        left: 155px;
+        height: 350px;
+        /* background-color: rgb(11, 7, 119) */
+    }
+    .divone-left h2 {
+        font-size: 2.0em;
+        float: inline-start;
+        color: #290066;
+    }
+    .divone-left h1 {
+        font-size: 3.5em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #6600cc;
+        font-weight: bold;
+    }
+    .divone-right {
+        position: absolute;
+        left: 155px;
+        top: 350px;
+        height: 350px;
+        /* cursor: none;  */
+        /* background-color: rgb(84, 4, 90) */
+    }
+    .divtwo {
+        position: absolute;
+        top: 1020px;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+    }
+}

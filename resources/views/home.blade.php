@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
-
+    <link rel="stylesheet" href={{ asset('css/mobile.css') }}>
 </head>
 
 <body style="background-color:#99ddff">
+
     <nav class="nav" id="navbar_top">
         <div class="container">
             <h1 class="logo"><img src="{{ URL::asset('/images/badhonlogo.png') }}" alt="Badhon_Rahman" height="60">
             </h1>
-            <ul>
+            <ul id="menulist">
                 <li style="padding: 0 30px;"><a href="#" class="current" id="a1">Home</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a2">Services</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a3">About</a></li>
@@ -29,7 +30,9 @@
                 <li style="padding: 0 30px;"><a href="#" id="a7"><button class="contact-btn" style="font-size:1.0em;">
                             Contact </button></a></li>
             </ul>
-
+            <div class="mobile-logo">
+                <img src="{{ URL::asset('/images/menu.png') }}" height="30" onclick="togglemenu()">
+            </div>
         </div>
     </nav>
     @if ($message = Session::get('success'))
@@ -53,10 +56,9 @@
         <div class="w3-center w3-animate-left">
             <div class="divone-left">
                 <div style="position: absolute;top: 200px;left: 25px;width: 700px;height: 450px; text-align:left">
-                    <h2 style="font-size:3.1em;font-family: 'Josefin Sans', sans-serif; color:#290066;">Hello, I Am
+                    <h2 >Hello, I Am
                     </h2>
                     <h1 class="typewrite"
-                        style="font-size:4.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#6600cc;font-weight: bold;"
                         data-period="2000" data-type='[ "Badhon Rahman"]'>
                         <span class="wrap"></span>
                     </h1>
@@ -64,9 +66,9 @@
                     <p
                         style="font-size:1.7em;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                         A Software Engineer. I work with: PHP, Laravel, JavaScript, MySQL.</p>
-                    <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;"> Hire
+                       <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;" onclick="hireme()"> Hire
                         Me! </button>
-                    <a href="#">See My Works</a>
+                    <a href="#4" >See My Works</a>
                 </div>
             </div>
         </div>
@@ -490,36 +492,110 @@
 
         <div class="w3-center w3-animate-right">
             <div class="divfour2right" id="5">
-                <h3
-                    style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;">
-                    Testimonials</h3>
-                <h1
-                    style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;">
-                    Happy Clients Feedback
-                </h1>
-                <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -600px;">
-                <p
-                    style="margin-left: 52px;margin-top: -30px;    width: 550px;
-                    text-align: left;
-                    font-size: 18px;
-                    font-family: 'Lato', sans-serif;">
-                    Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
-                    aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
-                    magnam aliquam quaerat voluptatem reprehenderit in voluptate
-                    cillum dolore eu fugiat nulla pariatur maxime...
-                </p>
-                <h3
-                    style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
-                    Kevin Andrew</h3>
-                <p
-                    style="margin-left: 52px;width: 550px;
-                     text-align: left;
-                     font-size: 15px;
-                     font-family: 'Lato', sans-serif;">
-                    CEO of the company
-                </p>
-                <button class="divfour2rightbtnleft"><img src="{{ URL::asset('/images/arrowl.png') }}"> </button>
-                <button class="divfour2rightbtnright"><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+                <div class="carousel">
+                    <div class="sliders">
+                        <div class="slide active">
+                            <h3
+                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            Testimonials</h3>
+                        <h1
+                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
+                            Happy Clients Feedback
+                        </h1>
+                        <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
+                        <p
+                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
+                            text-align: left;
+                            font-size: 18px;
+                            font-family: 'Lato', sans-serif;margin-bottom:30px;">
+                            Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+                            aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
+                            magnam aliquam quaerat voluptatem reprehenderit in voluptate
+                            cillum dolore eu fugiat nulla pariatur maxime...
+                        </p>
+                        <h3
+                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
+                            Kevin Andrew</h3>
+                        <p
+                            style="margin-left: 52px;width: 550px;
+                             text-align: left;
+                             font-size: 15px;
+                             font-family: 'Lato', sans-serif;">
+                            CEO of the company
+                        </p>
+                        </div>
+                        <div class="slide">
+                            <h3
+                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            Testimonials 2 </h3>
+                        <h1
+                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
+                            Happy Clients Feedback 2
+                        </h1>
+                        <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
+                        <p
+                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
+                            text-align: left;
+                            font-size: 18px;
+                            font-family: 'Lato', sans-serif; margin-bottom:30px;">
+                            Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+                            aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
+                            magnam aliquam quaerat voluptatem reprehenderit in voluptate
+                            cillum dolore eu fugiat nulla pariatur maxime...
+                        </p>
+                        <h3
+                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
+                            Kevin Andrew</h3>
+                        <p
+                            style="margin-left: 52px;width: 550px;
+                             text-align: left;
+                             font-size: 15px;
+                             font-family: 'Lato', sans-serif;">
+                            CEO of the company
+                        </p>
+                        </div>
+                        <div class="slide">
+                            <h3
+                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            Testimonials 3</h3>
+                        <h1
+                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
+                            Happy Clients Feedback 3
+                        </h1>
+                        <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
+                        <p
+                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
+                            text-align: left;
+                            font-size: 18px;
+                            font-family: 'Lato', sans-serif;margin-bottom:30px;">
+                            Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+                            aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
+                            magnam aliquam quaerat voluptatem reprehenderit in voluptate
+                            cillum dolore eu fugiat nulla pariatur maxime...
+                        </p>
+                        <h3
+                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
+                            Kevin Andrew</h3>
+                        <p
+                            style="margin-left: 52px;width: 550px;
+                             text-align: left;
+                             font-size: 15px;
+                             font-family: 'Lato', sans-serif;">
+                            CEO of the company
+                        </p>
+                        </div>
+                    
+                    </div>
+                </div>
+<div class="divfour2rightbottom">
+    <button id="carousel__controls__prev" class="divfour2rightbtnleft"><img src="{{ URL::asset('/images/arrowl.png') }}"> </button>
+
+    <button class="divfour2rightbtnright" id="carousel__controls__next"><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
+
+</div>
+               
+                </div>
+        
             </div>
         </div>
 
@@ -742,12 +818,12 @@
                 alt="Badhon_Rahman" height="60">
         </h1>
         <ul>
-            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Home</a></li>
-            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Services</a></li>
-            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">About</a></li>
-            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Portfolio</a></li>
-            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="">Testimonials</a></li>
-            <li style="padding: 0 15px; "><a href="">Blog</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="#1">Home</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="#2">Services</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="#3">About</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="#4">Portfolio</a></li>
+            <li style="padding: 0 15px; border-right:2px solid #ff8400;"><a href="#5">Testimonials</a></li>
+            <li style="padding: 0 15px; "><a href="#6">Blog</a></li>
         </ul>
 
         <div style="margin: 20px;text-align: center;">
