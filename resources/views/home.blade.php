@@ -63,8 +63,7 @@
                         <span class="wrap"></span>
                     </h1>
 
-                    <p
-                        style="font-size:1.7em;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <p>
                         A Software Engineer. I work with: PHP, Laravel, JavaScript, MySQL.</p>
                        <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;" onclick="hireme()"> Hire
                         Me! </button>
@@ -76,9 +75,9 @@
             <div class="divone-right">
                 <div class="w3-center w3-animate-bottom">
                     <div class="float">
-                        <img src="{{ URL::asset('/images/y1.png') }}" height="700">
+                        <img src="{{ URL::asset('/images/y1.png') }}" height="700" id="badhon">
                     </div>
-                    <div class="cup">
+                    <div class="cup" id="cup1">
                         <div class="class" style="display: flex">
                             <figure>
                                 <img src="{{ URL::asset('/images/trophy.png') }}" height="30px">
@@ -92,7 +91,7 @@
                         </div>
 
                     </div>
-                    <div class="admin text-center">
+                    <div class="admin text-center" id="cus1">
                         <figure>
                             <img src="{{ URL::asset('/images/cus.png') }}" height="30px">
                         </figure>
@@ -127,12 +126,10 @@
     </div>
 
     <div class="divtwo" id="2">
-        <div class="class" style="padding:120px">
-            <h3
-                style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#5212b2;text-align:center;font-weight: bold;">
+        <div class="div2in" >
+            <h3>
                 My Expertise</h3>
-            <h1
-                style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3b0472;font-weight: bold;text-align:center">
+            <h1>
                 Provide Wide Range of<br>
                 Digital Services
             </h1>
@@ -241,8 +238,8 @@
     </div>
     <div class="divthree" id="3">
         <div class="w3-center w3-animate-left">
-            <div class="divthree-left" style="margin: 100px 0px;">
-                <div class="container" style="width: 680px">
+            <div class="divthree-left" >
+                <div class="container" style="width: 680px" id="d3c">
                     <div class="row">
                         <div class="col-lg-6 order-lg-0 order-2">
                             <div class="leftcard">
@@ -354,12 +351,10 @@
             </div>
         </div>
         <div class="w3-center w3-animate-right">
-            <div class="divthree-right" style="margin: 100px 0px;">
-                <h3
-                    style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#5212b2;text-align:left;font-weight: bold;">
+            <div class="divthree-right" >
+                <h3>
                     My Skills</h3>
-                <h1
-                    style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#3b0472;font-weight: bold;text-align:left;padding-bottom:15px;">
+                <h1>
                     Beautiful & Unique <br> Digital Experiences
                 </h1>
                 <p style="padding-bottom:15px;">Nostrum exercitationem ullam corporis suscipit laborioa
@@ -389,11 +384,9 @@
     </div>
 
     <div class="divfour" id="4">
-        <h3
-            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#f2edfa;text-align:center;font-weight: bold;padding-top: 100px;">
+        <h3>
             Creative Works</h3>
-        <h1
-            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#ede8f3;font-weight: bold;text-align:center;padding-bottom:15px;">
+        <h1>
             Check My Portfolio
         </h1>
         <div id="divfournav" class="text-center">
@@ -420,7 +413,7 @@
                                 </div>
                                 <button id="aud"><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
                             </div>
-                            <div class="pleftcardb1" style="margin-right: 20px;background: url(../images/p3.png)" id="cmud">
+                            <div class="pleftcardb1" style="margin-right: 20px;background: url(../images/p3.png);background-size: cover;" id="cmud">
                                 <div style="margin-top: 220px;">
                                     <h3>
                                         Mobile UI Design</h3>
@@ -429,7 +422,7 @@
                                 </div>
                                 <button id="mud"><img src="{{ URL::asset('/images/arrowr.png') }}"> </button>
                             </div>
-                            <div class="pleftcardb1" style="margin-left: 10px;background: url(../images/p4.png)" id="cbud">
+                            <div class="pleftcardb1" style="margin-left: 10px;background: url(../images/p4.png);background-size: cover;" id="cbud">
                                 <div style="margin-top: 220px;">
                                     <h3>
                                         Businesscard UI Design</h3>
@@ -472,7 +465,7 @@
         </div>
     </div>
 
-    <div class="divfour2">
+    <div class="divfour2" id="5">
         <div class="w3-center w3-animate-left">
             <div class="divfour2left">
                 <img src="{{ URL::asset('/images/people.png') }}" height="400px">
@@ -491,96 +484,63 @@
         </div>
 
         <div class="w3-center w3-animate-right">
-            <div class="divfour2right" id="5">
+            <div class="divfour2right" >
                 <div class="carousel">
                     <div class="sliders">
                         <div class="slide active">
-                            <h3
-                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            <h3>
                             Testimonials</h3>
-                        <h1
-                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
+                        <h1>
                             Happy Clients Feedback
                         </h1>
                         <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
-                        <p
-                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
-                            text-align: left;
-                            font-size: 18px;
-                            font-family: 'Lato', sans-serif;margin-bottom:30px;">
+                        <p>
                             Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
                             aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
                             magnam aliquam quaerat voluptatem reprehenderit in voluptate
                             cillum dolore eu fugiat nulla pariatur maxime...
                         </p>
-                        <h3
-                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
-                            Kevin Andrew</h3>
-                        <p
-                            style="margin-left: 52px;width: 550px;
-                             text-align: left;
-                             font-size: 15px;
-                             font-family: 'Lato', sans-serif;">
+                        <h4>
+                            Kevin Andrew</h4>
+                        <p>
                             CEO of the company
                         </p>
                         </div>
                         <div class="slide">
-                            <h3
-                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            <h3>
                             Testimonials 2 </h3>
-                        <h1
-                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
-                            Happy Clients Feedback 2
+                        <h1>
+                            Happy Clients Feedback 
                         </h1>
                         <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
-                        <p
-                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
-                            text-align: left;
-                            font-size: 18px;
-                            font-family: 'Lato', sans-serif; margin-bottom:30px;">
+                        <p>
                             Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
                             aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
                             magnam aliquam quaerat voluptatem reprehenderit in voluptate
                             cillum dolore eu fugiat nulla pariatur maxime...
                         </p>
-                        <h3
-                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
-                            Kevin Andrew</h3>
-                        <p
-                            style="margin-left: 52px;width: 550px;
-                             text-align: left;
-                             font-size: 15px;
-                             font-family: 'Lato', sans-serif;">
+                        <h4>
+                            Kevin Andrew</h4>
+                        <p>
                             CEO of the company
                         </p>
                         </div>
                         <div class="slide">
-                            <h3
-                            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:left;font-weight: bold;padding-top: 30px;margin-bottom:30px;">
+                            <h3>
                             Testimonials 3</h3>
-                        <h1
-                            style="font-size:3.5em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:left;padding-bottom:15px;margin-bottom:30px;">
-                            Happy Clients Feedback 3
+                        <h1>
+                            Happy Clients Feedback 
                         </h1>
                         <img src="{{ URL::asset('/images/comma.png') }}" style="margin-left: -500px;">
-                        <p
-                            style="margin-left: 52px;margin-top: -30px;    width: 550px;
-                            text-align: left;
-                            font-size: 18px;
-                            font-family: 'Lato', sans-serif;margin-bottom:30px;">
+                        <p>
                             Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
                             aeci velit, sed quia non numquam eius modi tempora incidunt ut lao
                             magnam aliquam quaerat voluptatem reprehenderit in voluptate
                             cillum dolore eu fugiat nulla pariatur maxime...
                         </p>
-                        <h3
-                            style="margin-left: 52px;font-size:1.4em;font-family: 'Josefin Sans', sans-serif; color:#5c2aad;text-align:left;font-weight: bold;">
-                            Kevin Andrew</h3>
-                        <p
-                            style="margin-left: 52px;width: 550px;
-                             text-align: left;
-                             font-size: 15px;
-                             font-family: 'Lato', sans-serif;">
+                        <h4>
+                            Kevin Andrew</h4>
+                        <p>
                             CEO of the company
                         </p>
                         </div>
@@ -602,11 +562,9 @@
     </div>
 
     <div class="divfive" id="6">
-        <h3
-            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:center;font-weight: bold;padding-top: 100px;">
+        <h3>
             Latest News</h3>
-        <h1
-            style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:center;padding-bottom:50px;">
+        <h1>
             Blog & Articles
         </h1>
 

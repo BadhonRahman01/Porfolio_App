@@ -4,6 +4,11 @@
         overflow: hidden;
         transition: 0.5s;
     }
+    .nav {
+        position: fixed;
+        z-index: 100;
+        text-align: left;
+    }
 
     .nav ul {
         width: 50%;
@@ -16,8 +21,6 @@
     }
     .nav ul li {
         display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
     .nav ul li a {
         display: inline-block;
@@ -33,14 +36,15 @@
     }
     .divone {
         position: absolute;
+        top: -50px;
         width: 700px;
         height: 1000px;
         /* background-color: rgb(128, 11, 11) */
     }
     .divone-social {
         position: absolute;
-        top: 200px;
-        left: 10px;
+        top: 220px;
+        left: -20px;
         width: 75px;
         height: 300px;
         /* background-color: #666 */
@@ -52,7 +56,9 @@
         /* background-color: rgb(11, 7, 119) */
     }
     .divone-left h2 {
-        font-size: 2.0em;
+        font-size: 2em;
+        text-align: left;
+        left: 550px;
         float: inline-start;
         color: #290066;
     }
@@ -64,17 +70,404 @@
     }
     .divone-right {
         position: absolute;
-        left: 155px;
-        top: 350px;
+        left: 50px;
+        top: 450px;
         height: 350px;
         /* cursor: none;  */
         /* background-color: rgb(84, 4, 90) */
     }
+    .divone-left p {
+        font-size: 1.2em;
+    }
+    #badhon {
+        height: 550px;
+    }
+    #cup1 {
+        top: 30%;
+        width: 130px;
+    }
+    #cus1 {
+        right: 50px;
+    }
+    .contact-btn {
+        background: #ff6600;
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+        width: 75px;
+        height: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ff8400;
+    }
+    .contact-btn:hover {
+        background: rgb(115, 0, 255);
+        transform: translateY(-8px);
+        transition: all 0.3s ease-in-out;
+        border: none;
+    }
+    .hc1 {
+        top: -550px;
+    }
+    /* div2 */
     .divtwo {
         position: absolute;
-        top: 1020px;
+        top: 840px;
         width: 100%;
-        height: 1000px;
+        height: 1400px;
         background-color: rgb(255, 255, 255);
+    }
+    .div2in {
+        padding: 60px;
+    }
+    .divtwo h3 {
+        font-size: 1.4em;
+    }
+    .divtwo h1 {
+        font-size: 2.5em;
+    }
+    .service-box-item {
+        padding: 20px 18px;
+        margin: 20px;
+    }
+    /* div3 */
+    .divthree {
+        position: absolute;
+        top: 2200px;
+        width: 100%;
+        height: 1200px;
+        background-color: rgb(227, 242, 248);
+    }
+
+    #d3c {
+        width: 100%;
+    }
+    .divthree-right {
+        position: absolute;
+        top: 10px;
+        left: 155px;
+        width: 100%;
+        height: 450px;
+        margin: 100px 0px;
+        /* background-color: rgb(84, 4, 90); */
+    }
+    .divthree-right h3 {
+        font-size: 1.3em;
+        font-family: "Josefin Sans", sans-serif;
+        color: #5212b2;
+        text-align: left;
+        margin-left: 170px;
+        font-weight: bold;
+    }
+    .divthree-right h1 {
+        font-size: 2.5em;
+        margin-left: 70px;
+    }
+
+    .divthree-left {
+        position: absolute;
+        left: 200px;
+        top: 550px;
+        width: 100%;
+        height: 450px;
+        margin: 100px 0px;
+        /* background-color: rgb(11, 7, 119); */
+    }
+    .leftcard {
+        width: 180px;
+        height: 190px;
+        margin-left: -50px;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 25px;
+        padding-top: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+    .leftcard:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px #4195fc;
+    }
+    .rightcard {
+        width: 180px;
+        height: 190px;
+        margin-top: -440px;
+        margin-left: 150px;
+        margin-bottom: 470px;
+        background-color: white;
+        border-radius: 25px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    .rightcard:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px #4195fc;
+    }
+
+    /* div4 */
+    .divfour {
+        position: absolute;
+        top: 3400px;
+        width: 100%;
+        height: 600px;
+        background-color: rgb(99, 59, 207);
+    }
+    .divfour h3 {
+        font-size: 1.4em;
+        font-family: "Josefin Sans", sans-serif;
+        color: #f2edfa;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+    .divfour h1 {
+        font-size: 2.5em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #ede8f3;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    #divfournav {
+        margin-bottom: 25px;
+    }
+    #divfournav button {
+        border: none;
+        color: white;
+        background: transparent;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #divfournav button:hover {
+        color: orange;
+    }
+    #divfournav button.current {
+        border-bottom: 4px solid orange;
+        color: orange;
+    }
+    .divfour1 {
+        position: absolute;
+        top: 3580px;
+        width: 100%;
+        height: 600px;
+        /* background-color: rgb(81, 207, 59); */
+    }
+    .divfour1left {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        margin: 25px 25px 25px 0px;
+        /* background-color: rgb(11, 7, 119); */
+    }
+    .pleftcard {
+        width: 450px;
+        height: 200px;
+        text-align: left;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        background-color: white;
+        background-size: cover;
+    }
+    .pleftcard button {
+        background: orange;
+        color: white;
+        float: right;
+        margin-right: 20px;
+        margin-top: -60px;
+        text-align: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #ff8400;
+        display: none;
+    }
+    .pleftcard h3 {
+        font-size: 1.3em;
+        font-family: "Josefin Sans", sans-serif;
+        color: #f2edfa;
+        font-weight: bold;
+        margin-top: -80px;
+        text-align: left;
+        padding-left: 20px;
+        display: none;
+    }
+    
+    .pleftcard p {
+        color: #f2edfa;
+        font-size: 16px;
+        text-align: left;
+        padding-left: 20px;
+        display: none;
+    }
+    .pleftcard:hover {
+        background-size: cover;
+    }
+    .pleftcardb1 {
+        width: 230px;
+        height: 200px;
+        background-size: cover;
+    }
+    #cmud{
+        margin-left: 90px;
+    }
+    .pleftcardb1 button {
+        background: orange;
+        color: white;
+        float: right;
+        margin-right: 20px;
+        margin-top: -50px;
+        text-align: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #ff8400;
+        display: none;
+    }
+    .pleftcardb1 h3 {
+        font-size: 1.3em;
+        font-family: "Josefin Sans", sans-serif;
+        color: #f2edfa;
+        margin-top: -100px;
+        font-weight: bold;
+        text-align: left;
+        display: none;
+    }
+    
+    .pleftcardb1 p {
+        color: #f2edfa;
+        font-size: 16px;
+        text-align: left;
+        display: none;
+    }
+
+    .divfour1right {
+        position: absolute;
+        top: 460px;
+        left: 0px;
+        width: 100%;
+        height: 550px;
+        /* background-color: rgb(202, 59, 212); */
+    }
+    .prightcard {
+        width: 230px;
+        height: 200px;
+        margin-top: 30px;
+        float: left;
+        margin-left: 30px;
+    }
+    .prightcard h3 {
+        margin-top: -120px;
+    }
+    #cfud{
+        margin-left: 65px;
+    }
+
+    .divfour2 {
+        position: absolute;
+        top: 4350px;
+        width: 100%;
+        height: 770px;
+        background-color: rgb(255, 255, 255);
+    }
+    .divfour2left {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 350px;
+        margin: 25px 25px 25px 25px;
+        /* background-color: rgb(11, 7, 119); */
+    }
+    .divfour2left img{
+        height: 270px;
+    }
+
+    .divfour2right {
+        position: absolute;
+        top: 250px;
+        left: 155px;
+        width: 100%;
+        height: 550px;
+    }
+    .divfour2right h3 {
+        font-size: 1.4em;
+        margin-left: 180px;
+    }
+    .divfour2right h1 {
+        margin-left: 60px;
+        font-size: 2.5em;
+    }
+    .divfour2right p {
+        margin-left: 65px;
+        margin-top: -40px;
+        width: 450px;
+    }
+    .divfour2right h4 {
+        margin-left: 65px;
+        margin-bottom: 20px;
+    }
+    .divfour2rightbottom {
+        bottom: 80px;
+    }
+    .divfour2rightbtnleft { 
+        width: 30px;
+        height: 30px;
+    }
+    .divfour2rightbtnright { 
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /* div5 */
+    .divfive {
+        position: absolute;
+        top: 5120px;
+        width: 100%;
+        height: 1800px;
+        background-color: rgb(231, 237, 213);
+        padding-left: 150px;
+    }
+    .divfive h3 {
+        font-size: 1.5em;
+        padding-top: 50px;
+    }
+    .divfive h1 {
+        font-size: 2.5em;
+    }
+
+
+
+
+
+    /* div6 */
+    .divsix {
+        position: absolute;
+        top: 6920px;
+        width: 100%;
+        height: 1600px;
+        background-color: white;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+
+
+
+
+    /* divfooter */
+    .divfooter {
+        position: absolute;
+        top: 8520px;
+        width: 100%;
+        height: 370px;
+        background-color: rgb(40, 32, 65);
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
