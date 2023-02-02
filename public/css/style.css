@@ -18,6 +18,7 @@
     background-color: #fcfcfc;
     left: 0;
     position: fixed;
+    height: 100px;
     display: block;
     z-index: 100;
     right: 0;
@@ -941,6 +942,22 @@ html {
     padding-left: 150px;
     padding-right: 150px;
 }
+.divsix h3 {
+    font-size: 1.7em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #7f51c9;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+}
+.divsix h1 {
+    font-size: 3.7em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c00a9;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
 .contact-form input,
 .contact-form textarea {
     background: #e9e9f0;
@@ -1072,7 +1089,14 @@ html {
 .divfooter a {
     text-decoration: none;
 }
-
+#footerhr {
+    height: 1px;
+    width: 950px;
+    margin: auto;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
 .footer-icons {
     padding-left: 0;
     margin-bottom: 0;
@@ -1434,6 +1458,9 @@ html {
     padding-top: 6px;
     margin-left: 620px;
     margin-top: -40px;
+}
+.blog-form {
+    height: 500px;
 }
 
 .modal-close:hover,

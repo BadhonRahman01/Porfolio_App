@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
-    <link rel="stylesheet" href={{ asset('css/mobile.css') }}>
+    <link rel="stylesheet" href={{ asset('css/screen2.css') }}>
+    <link rel="stylesheet" href={{ asset('css/screen3.css') }}>
 </head>
 
 <body style="background-color:#99ddff">
@@ -25,13 +26,13 @@
                 <li style="padding: 0 30px;"><a href="#" id="a2">Services</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a3">About</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a4">Portfolio</a></li>
-                <li style="padding: 0 30px;"><a href="#" id="a5">Testimonials</a></li>
+                <li style="padding: 0 30px;" id="lit"><a href="#" id="a5">Testimonials</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a6">Blog</a></li>
                 <li style="padding: 0 30px;"><a href="#" id="a7"><button class="contact-btn" style="font-size:1.0em;">
                             Contact </button></a></li>
             </ul>
             <div class="mobile-logo">
-                <img src="{{ URL::asset('/images/menu.png') }}" height="30" onclick="togglemenu()">
+                <img src="{{ URL::asset('/images/menu.png') }}" id="menuimg" height="30" onclick="togglemenu()">
             </div>
         </div>
     </nav>
@@ -65,7 +66,7 @@
 
                     <p>
                         A Software Engineer. I work with: PHP, Laravel, JavaScript, MySQL.</p>
-                       <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;" onclick="hireme()"> Hire
+                       <button class="contact-btn" style="font-size:1.2em;margin: 30px; width: 170px;height: 55px;" onclick="hireme()" id="cbtnhm"> Hire
                         Me! </button>
                     <a href="#4" >See My Works</a>
                 </div>
@@ -291,7 +292,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-0 order-2">
-                            <div class="rightcard">
+                            <div class="rightcard" id="s3rc1">
                                 <div class="single-chart">
                                     <svg viewBox="0 0 36 36" class="circular-chart dark">
                                       <path class="circle-bg"
@@ -569,7 +570,7 @@
         </h1>
 
         <div class="row">
-            <div class="col-lg-4" style="margin-left: 80px">
+            <div class="col-lg-4" style="margin-left: 80px" id="blog1">
                 <div class="blog-box-item">
                     <div class="blog-img">
                         <a href="#" data-toggle="modal" data-target="#blog-model-1">
@@ -596,8 +597,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4" style="margin-left: -80px">
-                <div class="blog-box-item">
+            <div class="col-lg-4" style="margin-left: -80px" >
+                <div class="blog-box-item" id="blog2">
                     <div class="blog-img">
                         <a href="#" data-toggle="modal" data-target="#blog-model-1" >
                             <figure class="mb-0">
@@ -624,7 +625,7 @@
                 </div>
             </div>
             <div class="col-lg-4" style="margin-left: -80px">
-                <div class="blog-box-item">
+                <div class="blog-box-item" id="blog3">
                     <div class="blog-img">
                         <a href="#" data-toggle="modal" data-target="#blog-model-3" >
                             <figure class="mb-0">
@@ -672,17 +673,15 @@
     </div>
 
     <section class="divsix" id="7">
-        <h3
-            style="font-size:1.7em;font-family: 'Josefin Sans', sans-serif; color:#7f51c9;text-align:center;font-weight: bold;padding-top: 100px;">
+        <h3>
             Get in Touch</h3>
-        <h1
-            style="font-size:3.7em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:#4c00a9;font-weight: bold;text-align:center;padding-bottom:50px;">
+        <h1>
             Any Questions? <br>
             Feel Free to Contact
         </h1>
         <div class="w3-center w3-animate-left">
             <div class="col-lg-4 order-lg-0 order-2">
-                <div class="contact-information position-relative wow slideInLeft">
+                <div class="contact-information">
                     <ul class="list-unstyled" style="text-align:left">
                         <li>
                             <figure class="mb-0 d-flex align-items-center justify-content-center">
@@ -795,7 +794,7 @@
 
         </div>
         <div style="margin-top:60px;">
-            <hr style="height:1px;width:950px;margin:auto;border-width:0;color:gray;background-color:gray;">
+            <hr id="footerhr">
         </div>
 
         <div style="text-align: center;margin:40px;">
@@ -1089,7 +1088,7 @@
                     <h4 style="font-size:1.7em;font-family: 'Trebuchet MS', sans-serif;text-align:left;font-weight: bold;color:#3d137c">LEAVE A COMMENT
                     </h4>
 
-                    <div style="height: 500px">
+                    <div class="blog-form">
                         <form id="contactpage" action="{{ route('queries.store') }}" method="POST" class="contact-form">
                             @csrf
                             <div class="row">
@@ -1169,7 +1168,7 @@
                     <h4 style="font-size:1.7em;font-family: 'Trebuchet MS', sans-serif;text-align:left;font-weight: bold;color:#3d137c">LEAVE A COMMENT
                     </h4>
 
-                    <div style="height: 500px">
+                    <div class="blog-form">
                         <form id="contactpage" action="{{ route('queries.store') }}" method="POST" class="contact-form">
                             @csrf
                             <div class="row">
@@ -1249,7 +1248,7 @@
                     <h4 style="font-size:1.7em;font-family: 'Trebuchet MS', sans-serif;text-align:left;font-weight: bold;color:#3d137c">LEAVE A COMMENT
                     </h4>
 
-                    <div style="height: 500px">
+                    <div class="blog-form">
                         <form id="contactpage" action="{{ route('queries.store') }}" method="POST" class="contact-form">
                             @csrf
                             <div class="row">

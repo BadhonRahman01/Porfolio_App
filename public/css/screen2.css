@@ -1,24 +1,26 @@
 /* devices with max width of 775 */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     #menulist {
         overflow: hidden;
         transition: 0.5s;
     }
     .nav {
         position: fixed;
-        z-index: 100;
+        z-index: 2;
         text-align: left;
+        font-size: small;
     }
-
     .nav ul {
-        width: 50%;
+        width: 30%;
         background-color: #ffffff;
+        border-radius: 15px;
         position: fixed;
         display: inline-block;
-        top: 75px;
-        right: 0;
+        top: 85px;
+        right: 150px;
         z-index: 2;
     }
+
     .nav ul li {
         display: inline-block;
     }
@@ -266,7 +268,7 @@
         /* background-color: rgb(11, 7, 119); */
     }
     .pleftcard {
-        width: 450px;
+        width: 500px;
         height: 200px;
         text-align: left;
         margin-bottom: 30px;
@@ -314,7 +316,7 @@
         background-size: cover;
     }
     #cmud{
-        margin-left: 90px;
+        margin-left: 105px;
     }
     .pleftcardb1 button {
         background: orange;
@@ -365,7 +367,7 @@
         margin-top: -120px;
     }
     #cfud{
-        margin-left: 65px;
+        margin-left: 95px;
     }
 
     .divfour2 {
@@ -394,6 +396,10 @@
         width: 100%;
         height: 550px;
     }
+    .divfour2right img {
+        margin-right: 100px;
+        margin-bottom: 10px;
+    }
     .divfour2right h3 {
         font-size: 1.4em;
         margin-left: 180px;
@@ -415,12 +421,20 @@
         bottom: 80px;
     }
     .divfour2rightbtnleft { 
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+    }
+    .divfour2rightbtnleft img{
+        padding-top: 5px;
+        padding-left: 5px;
     }
     .divfour2rightbtnright { 
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+    }
+    .divfour2rightbtnright img {
+        padding-top: 5px;
+        padding-left: 5px;
     }
 
 
@@ -429,45 +443,79 @@
         position: absolute;
         top: 5120px;
         width: 100%;
-        height: 1800px;
+        height: 1850px;
         background-color: rgb(231, 237, 213);
         padding-left: 150px;
     }
     .divfive h3 {
         font-size: 1.5em;
         padding-top: 50px;
+        margin-right: 150px;
     }
     .divfive h1 {
         font-size: 2.5em;
+        margin-right: 120px;
     }
 
-
+    #blog2{
+        margin-top: 20px;
+        margin-left: 160px;
+        margin-bottom: 20px;
+    }
+    #blog3{
+        margin-left: 160px;
+    }
 
 
 
     /* div6 */
     .divsix {
         position: absolute;
-        top: 6920px;
+        top: 6970px;
         width: 100%;
-        height: 1600px;
+        height: 1500px;
         background-color: white;
         padding-left: 150px;
         padding-right: 150px;
     }
+    .divsix h3 {
+        font-size: 1.4em;
+        padding-top: 30px;
+    }
+    .divsix h1 {
+        font-size: 2.7em;
+    }
+    .contact-form{
+            margin-top: 50px;
+    }
 
-
-
+    .contact-form button{
+        height: 50px;
+    }
 
 
     /* divfooter */
     .divfooter {
         position: absolute;
-        top: 8520px;
-        width: 100%;
-        height: 370px;
-        background-color: rgb(40, 32, 65);
-        padding-left: 150px;
-        padding-right: 150px;
+        top: 8470px;
+    }
+    #footerhr {
+        width:80%;
+    }
+
+    /* modal */
+    .modal-content {
+        width: 85%;
+
+    }
+    .modal-close {
+        padding-top: 6px;
+        margin-left: 600px;
+        margin-top: -40px;
+    }
+    .blog-form {
+        height: 700px;
     }
 }
+
+

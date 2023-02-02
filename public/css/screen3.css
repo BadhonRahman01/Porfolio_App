@@ -1,0 +1,148 @@
+@media only screen and (max-width: 550px) {
+
+
+    .nav {
+        height: 100px;
+    }
+
+    .nav ul {
+        width: 90%;
+        background-color: #ffffff;
+        border-radius: 15px;
+        justify-content: left;
+        position: fixed;
+        display:grid;
+        top: 85px;
+        right: 25px;
+        z-index: 2;
+    }
+    .divone {
+        position: absolute;
+        top: -110px;
+        width: 700px;
+        height: 800px;
+        /* background-color: rgb(128, 11, 11) */
+    }
+    .divone-social {
+        display: none;
+    }
+    .divone-left {
+        left: 0px;
+        height: 350px;
+        /* background-color: rgb(11, 7, 119) */
+    }
+    .divone-left h2 {
+        font-size: 1.8em;
+        margin-left: 150px;
+    }
+    .divone-left h1 {
+        font-size: 2.5em;
+        margin-left: 100px;
+    }
+    #cbtnhm{
+        font-size:1.07em;margin: 10px;
+    }
+    .divone-right {
+        position: absolute;
+        left: -50px;
+        top: 350px;
+        height: 350px;
+    }
+    #cup1 {
+display: none;
+    }
+    #cus1 {
+        display: none;
+    }
+    #badhon {
+        height: 450px;
+    }
+    .hc1 {
+        top: -250px;
+    }
+    .tri1 {
+        top: -350px;
+    }
+
+    .divtwo {
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        height: 1400px;
+        background-color: rgb(255, 255, 255);
+    }
+    .div2in {
+        padding: 30px;
+    }
+    .divtwo h3 {
+        font-size: 1.2em;
+        padding-top: none;
+    }
+    .divtwo h1 {
+        font-size: 1.8em;
+    }
+    .service-box-item {
+        width: 100%;
+    }
+    .divthree {
+        position: absolute;
+        top: 2000px;
+        width: 100%;
+        height: 1400px;
+        background-color: rgb(227, 242, 248);
+    }
+    .divthree-right {
+        position: absolute;
+        top: -60px;
+        left: 50px;
+        width: 100%;
+        height: 450px;
+
+    }
+    .divthree-right h3 {
+        padding-top: -50px;
+        font-size: 1.3em;
+    }
+    .divthree-right h1 {
+        font-size: 2.2em;
+        margin-left: 70px;
+    }
+    .divthree-left {
+        position: absolute;
+        left: 50px;
+        top: 390px;
+        width: 100%;
+        height: 800px;
+        margin: 100px 0px;
+        /* background-color: rgb(11, 7, 119); */
+    }
+    /* #d3c {
+        width: 90%;
+    } */
+    .leftcard {
+        width:70%;
+        height: 190px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 25px;
+        padding-top: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+    .rightcard {
+        width: 70%;
+        height: 190px;
+        margin-top: -440px;
+        margin-left: -30px;
+        margin-bottom: 470px;
+        background-color: white;
+        border-radius: 25px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    #s3rc1{
+        margin-top: 50px;
+    }
+    
+}

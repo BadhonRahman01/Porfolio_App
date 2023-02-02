@@ -5,9 +5,11 @@ menulist.style.maxHeight = "0px";
 function togglemenu(){
     if(menulist.style.maxHeight == "0px")
     {
-        menulist.style.maxHeight = "130px";
+        menulist.style.maxHeight = "180px";
+        document.getElementById("menuimg").src = "../images/close.png";
     }else{
         menulist.style.maxHeight = "0px";
+        document.getElementById("menuimg").src = "../images/menu.png";
     }
 }
 
